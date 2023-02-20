@@ -7,7 +7,7 @@ This repository is  linked to my master thesis.
 It contains the used configuration files  and [logging data](experiments/fingerspelling_RWTH_26) of the conducted experiments. 
 As well as used [datasets](fingerspelling_dataset/I6) and sourcode of the implemented [GUI](application.py).
 Additionally, checkpoints of the trained models are provided. 
-This allows the application to be used without training based on provided weights. 
+This allows the application to be used without training. 
 
 
 Aim of the master thesis was to develop a dynamic fingerspelling recognition system capable of recognizing dynamic fingerspelled letters, which involve movement.
@@ -23,7 +23,7 @@ The used data set
 [I6_Gesture](https://www-i6.informatik.rwth-aachen.de/ftp/pub/I6_Gestures/)
 was provided by the RWTH Aachen. 
 
-In  folder [I6_Gestures](fingerspelling_dataset/I6_Gestures) the videomaterial containing split in test and training set 
+In  folder [I6_Gestures](fingerspelling_dataset/I6_Gestures) the videomaterial split in test and training set 
 is provided. Additionally, the extracted keypoints are provided in the folder [pkl_poses](fingerspelling_dataset/I6_Gestures/pkl_poses).
 
 In folder [I6](fingerspelling_dataset/I6) the reduced data set can be found. 
@@ -35,14 +35,14 @@ It is reduced to the letters of the international Hand Alphabet.
 ***
 ### Requirements 
 The models used in the application are provided by the [Openhands](https://pypi.org/project/OpenHands/) library. 
-Thanks to the developers for providing the library and making sign language recognition more accessible.
+Thanks to the developers providing the library and making sign language recognition more accessible.
 Check the documentation of [Openhands](https://openhands.ai4bharat.org/en/latest/index.html) for further instructions on how to use the library. 
 You can either run: 
 
 ```
 pip install --upgrade OpenHands
 ```
-
+To install the library. 
 Or you can clone the repository and build the library from the latest source. 
 
 ````
@@ -60,13 +60,14 @@ Additional requirements are provided in [requirements.txt](requirements.txt) fil
 ![](in_action.gif)
 
 
-After setting up your environment you can run the application with the following line of code. 
-The checkpoints from previous training are provided and the model is created based on those checkpoints. 
-The application is based on a LSTM Network. The model was plugged in with a GUI adapted from 
-[Nick Renotte](https://github.com/nicknochnack/ActionDetectionforSignLanguage).
+After setting up your environment you can run the application with the following line of code.
+
 ```
 python application.py
 ```
+The checkpoints from previous training are provided and the model is created based on those checkpoints. 
+The application is based on a LSTM Network. The model was plugged in with a GUI adapted from 
+[Nick Renotte](https://github.com/nicknochnack/ActionDetectionforSignLanguage).
 
 
 ***
