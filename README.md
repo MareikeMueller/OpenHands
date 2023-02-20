@@ -71,7 +71,7 @@ The application is based on a LSTM Network. The model was plugged in with a GUI 
 
 
 ***
-If you want to train the model by yourself you can run the following comman in your terminal. 
+If you want to train the model by yourself you can run the following command in your terminal. 
 You can specify in the training.py file which model you wish to train. 
 ```
 python training.py 
