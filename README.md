@@ -127,4 +127,5 @@ Thanks to [Nick Renotte](https://github.com/nicknochnack/ActionDetectionforSignL
 project and a template for a GUI. 
 
 And last but not least thanks to my neighbors cats for moral support.
+
 ![](support.jpg)
